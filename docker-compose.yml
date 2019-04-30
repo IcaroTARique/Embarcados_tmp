@@ -1,0 +1,63 @@
+version: "3.4"
+
+services:
+
+    webserver_numerico:
+        build: ./build/webserver
+        container_name: numerico_webserver
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - certs:/etc/letsencrypt
+            - ./volumes/calculoNumerico-webfiles:${DIRETORIO}
+        depends_on:
+            - letsencrypt_numerico
+        networks:
+            - webserver
+            - letsencrypt
+            - php
+        environment:
+            - APPNAME=${APPNAME}
+            - DOMAIN=${DOMAIN}
+        command: /bin/bash -c "genAppNginx --single-app -o /etc/nginx/conf.d/ && nginx -g 'daemon off;'"
+
+    letsencrypt_numerico:
+        build: ./build/letsencrypt
+        container_name: numerico_letsencrypt
+        restart: always
+        volumes:
+            - certs:/etc/letsencrypt
+            - ./volumes/calculoNumerico-webfiles:${DIRETORIO}
+        depends_on:
+            - php_numerico
+        networks:
+            - letsencrypt
+        environment:
+            - FQDN=${APPNAME}.${DOMAIN}
+            - DOMAIN=${DOMAIN}
+            - EMAIL_LETS=${EMAIL_LETS}
+            - DIRETORIO=${DIRETORIO}
+
+    php_numerico:
+        build: ./build/php
+        container_name: numerico_php
+        restart: always
+        volumes:
+            - ./volumes/calculoNumerico-webfiles:${DIRETORIO}
+        networks:
+             - php
+        environment:
+            - TOKEN=${TOKEN}
+            - REPOSITORIO=${REPOSITORIO_WEBFILES}
+            - RAMO=${RAMO}
+            - DIRETORIO=${DIRETORIO}
+        command: /bin/bash -c "envsubst '$${TOKEN} $${REPOSITORIO} $${RAMO} $${DIRETORIO}' < hooks/deploy-config-example.php > hooks/deploy-config.php && php-fpm"
+
+volumes:
+    certs:
+
+networks:
+    webserver:
+    letsencrypt:
+    php:
