@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>CN - UFPB - 2017.2</title>
+	<title>EMBARCADOS - UFPB - 2018.2</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/global.css">
@@ -15,65 +15,33 @@
 	<div class="container">
 		<div id="base">
 			<nav class="navbar navbar-expand-lg navbar-light bg-white">
-				<a class="navbar-brand" href="/"><img src="/assets/images/logo.png" width="150" alt=""></a>
+				<a class="navbar-brand" href="/"><img src="/assets/images/logotipo.png" width="150" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-th-list" aria-hidden="true"></i>
 				</button>
-				
+
 				<!-- MENU TOPO -->
 				<?php include "../includes/menuTopo.php"; ?>
 
-				<div class="groups">
-					<a href="https://www.facebook.com/yanffernandes" target="_blank">
-						<img src="/assets/images/yan-nav.png" class="img-responsive nossosLogos" title="Yan Ferreira" alt="Yan Ferreira" style="float: right;">
-					</a>
-					<a href="https://www.facebook.com/jose.olivio.5" target="_blank">
-						<img src="/assets/images/olivio-nav.png" class="img-responsive nossosLogos" title="José Olívio" alt="José Olívio" style="float: right;">
-					</a>
-					<a href="https://www.facebook.com/icaro.targino.a" target="_blank">
-						<img src="/assets/images/icaro-nav.png" class="img-responsive nossosLogos" title="Ícaro Targino" alt="Ícaro Targino" style="float: right;">
-					</a>
-					<a href="https://www.facebook.com/brunocorr" target="_blank">
-						<img src="/assets/images/bruno-nav.png" class="img-responsive nossosLogos" title="Bruno Correia" alt="Bruno Correia" style="float: right;">
-					</a>
-					<a href="https://www.facebook.com/arthur.curty" target="_blank">
-						<img src="/assets/images/arthur-nav.png" class="img-responsive nossosLogos" title="Arthur Curty" alt="Arthur Curty" style="float: right;">
-					</a>
-				</div>				
 			</nav>
 
 			<div id="slide">
-				<h1>CÁLCULO NUMÉRICO</h1>
+	  			<h1>SMART ONLINE MONITORING</h1>
+				<h5>MEDIDOR INTELIGENTE</h5>
 			</div>
-			
+
 			<div id="forms">
 				<div class="alert alert-primary" role="alert">
-	  				<b>ATIVIDADE 04 - NEWTON</b>
+					<h3>HISTÓRIA</h3>
 				</div>
-
-				<form name="FormParameters" method="POST" action="/assets/scripts/etapa01/newton.php">
-
-					<?php $GLOBALS['DIR_RANDOM'] = md5(date('Y-m-d H:i:s.') . gettimeofday()['usec']) ; ?>
-					<input type="hidden" name="exec" value="<?php echo $DIR_RANDOM ?>">
-
-					<div class="form-group">
-					    <label for="functionNewton">Função</label>
-					    <select class="form-control" name="precisao" id="precisao">
-							<option>( 0.3 * PI * x ^ 2 * ( 9 - x ) ) - 1</option>
-						</select>
-						<small id="functionHelp" class="form-text text-muted">Escolha a função.</small>
-					</div>
-
-					<div class="form-group">
-					    <label for="functionBissecaoValueA">Valor A</label>
-					    <input type="number" step="any" class="form-control" name="functionInputValueA" id="functionInputValueA" aria-describedby="functionValueAHelp" placeholder="Digite o valor">
-					    <small id="functionValueAHelp" class="form-text text-muted">Entre com o valor.</small>
-					</div>
-
-					<input type="submit" class="btn btn-primary upload" value="Encontrar raízes" id="foundRoot">
-
-				</form>
-
+				<p>A história começa no inicio da disciplina de Sistemas Embarcados, ministrada pelo Professor Dr. Alisson Brito,
+				onde é proposta uma idéia de projeto, passando por seu crivo e, eventualmente, aprovação para desenvolvimento na
+				disciplina. Encontramo-nos como grupo a primeira vez diante de uma sugestão de tema envolvendo um medidor eletônico
+				de energia, conforme as idéias convergiam, formamos (agora oficialmente) o grupo que viria a ser o SMART ONLINE MONITORING.
+				A partir do primeiro encontro, definimos parâmetros os quais viriam a ser nossos passos diários de desenvolvimento e
+				construção de um novo conceito para monitoramento. Usando ferramentas modernas e soluções computacionais eficientes,
+				o projeto conta com um ESP 8266 com um sistema em C based language, uso do banco de dados FIREBASEm front em HTML
+				e CSS, algum PHP, API em Python e Javascrip. </p>
 			</div>
 
 		</div>
@@ -92,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </body>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="/assets/js/jquery.js"></script>

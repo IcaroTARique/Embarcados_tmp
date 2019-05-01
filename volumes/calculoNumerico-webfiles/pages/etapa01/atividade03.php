@@ -19,16 +19,16 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-th-list" aria-hidden="true"></i>
 				</button>
-				
+
 				<!-- MENU TOPO -->
-				<?php include "../includes/menuTopo.php"; ?>				
+				<?php include "../includes/menuTopo.php"; ?>
 			</nav>
 
 			<div id="slide">
 	  			<h1>SMART ONLINE MONITORING</h1>
 				<h5>MEDIDOR INTELIGENTE</h5>
 			</div>
-			
+
 			<div id="forms">
 				<div class="alert alert-primary" role="alert">
 					<h3>SOBRE</h3>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </body>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="/assets/js/jquery.js"></script>

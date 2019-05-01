@@ -19,23 +19,23 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-th-list" aria-hidden="true"></i>
 				</button>
-				
+
 				<!-- MENU TOPO -->
-				<?php include "../includes/menuTopo.php"; ?>				
+				<?php include "../includes/menuTopo.php"; ?>
 			</nav>
 
 			<div id="slide">
 				<h1>SMART ONLINE MONITORING</h1>
 				<h5>MEDIDOR INTELIGENTE</h5>
 			</div>
-			
+
 			<div id="forms">
 				<div class="alert alert-primary" role="alert">
 	  				<h3>GRUPO</h3>
 				</div>
 				<p>Grupo composto por <b>Ícaro Targino</b> e <b>Marsimar Costa</b> com finalidade de cumprir com a carga horária de 60H (4 créditos) da disciplina de <b>SISTEMAS EMBARCADOS</b> do
 				curso de Engenharia da Computação na <b>Universidade Federal da Paraíba</b> ministrada pelo <b>Dr. Professor Alisson Brito</b></p>
-				<div class="alert alert-primary" role="alert"> 				
+				<div class="alert alert-primary" role="alert">
 					<h2>Ícaro Targino de Alexandria Rique</h2>
 				</div>
 				<div>
@@ -44,9 +44,9 @@
 	   					<p id="descript">Aluno de Graduação do curso de Engenharia da Computação, ingressou no curso no período de 2015.2, desenvolve principalemnte na linguagem Python, trabalha pesquisa na Área de Inteligência Artificial, Tutor de Calculo III e Pesquisador de Iniciação Científica no período de 2017.2 a 2018.1. Atualmente Tutor de Cálculo Numérico no período que compreendera de 2018.2 até 2019.1, Trabalha no Laboratório da empresa SYNCHRO SOLUÇÕES FISCAIS como desenvolvedor.</p>
 	   					 <a href="https://github.com/IcaroTARique" target="_blank">LINK PARA O GITHUB</a><br>
 	   					 <a href="http://lattes.cnpq.br/3997057943408576" target="_blank">LINK PARA O LATTES</a><br>
-	   					 <a href="https://www.linkedin.com/in/%C3%ADcaro-targino-3261b2154/" target="_blank">LINK PARA O LINKEDIN</a><br> 
+	   					 <a href="https://www.linkedin.com/in/%C3%ADcaro-targino-3261b2154/" target="_blank">LINK PARA O LINKEDIN</a><br>
 	   				</div>
-	   			<div class="alert alert-primary" role="alert"> 				
+	   			<div class="alert alert-primary" role="alert">
 					<h2>Marismar da Costa Silva</h2>
 				</div>
 				<div>
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </body>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="/assets/js/jquery.js"></script>
